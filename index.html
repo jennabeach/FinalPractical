@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jenna Beach">
+  <meta name="email" content="beac0045@algonquinlive.com">
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="main.css">
+
+  <!--FONTS-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+
+  <!-- Script JS Page -->
+  <script defer src="scripts.js"></script>
+  <script defer src="validate.js"></script>
+  <script defer src="events.js"></script>
+
+
+  <title>CST8209: Final Practical by Jenna Beach(040777966)</title>
+
+</head>
+
+<body>
+  <h1>
+    Save the Ocean Charity Shop
+  </h1>
+  <p class="about" id="about">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed convallis nisi. Curabitur eu velit eu ex efficitur tincidunt non in purus. Aenean euismod ut est sit amet ornare. Nam cursus magna quis ante auctor viverra. Nullam gravida tortor non mauris malesuada, sed malesuada lectus sodales. Fusce vitae arcu dui. Etiam sit amet mattis nulla, tristique rutrum sapien. Praesent vitae est non orci posuere tempor eu porttitor purus. Nam molestie tincidunt justo, non feugiat augue aliquet nec. Nam vel urna non nulla consectetur eleifend ut non leo. Vestibulum sagittis purus ac elit facilisis auctor. Phasellus posuere dolor condimentum dui porttitor tempor. Nulla fermentum enim magna, non elementum urna euismod quis. Sed nec purus eget nibh maximus congue. Mauris dapibus lorem non volutpat efficitur. In sodales turpis non hendrerit molestie.
+  </p>
+  <h1>
+    Contact Form
+  </h1>
+  <div class="contactForm" id="contactForm">
+    <form action= " " name="contact" id="contact" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <p>
+          <label for="firstName">First Name:</label>
+          <input type="text" name="firstName" id="firstName" placeholder="First Name" maxlength="25" minlength="2">
+          <span id="fnameWarning" class="alert"></span>
+        </p>
+
+        <p>
+          <label for="lastName">Last Name:</label>
+          <input type="text" name="lastName" id="lastName" placeholder="Last Name" maxlength="25" minlength="2">
+          <span id="lnameWarning" class="alert"></span>
+        </p>
+
+        <p>
+          <label for="birth">Date of Birthday:</label>
+          <input type="date" id="birth" name="birth">
+          <span id="birthWarning" class="alert"></span>
+        </p>
+
+        <p>
+          <label for="gender">Gender:</label>
+          <input type="radio" id="genderID" name="gender" value="male">Male
+          <input type="radio" id="genderID" name="gender" value="female">Female
+          <input type="radio" id="genderID" name="gender" value="noAnswer"> Rather not say
+          <span id="genderWarning" class="alert"></span>
+        </p>
+
+        <p>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="user_email" placeholder="name@email.com">
+          <span id="emailWarning" class="alert"></span>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <p>
+          <label for="address1">Address:</label>
+          <input type="text" name="address1" id="address1" placeholder="123 Name Ave.">
+          <span id="address1Warning" class="alert"></span>
+        </p>
+
+        <p>
+          <label for="address2">Address 2:</label>
+          <input type="text" name="address2" id="address2" placeholder="Optional"></td>
+        </p>
+
+        <p>
+          <label for="city">City:</label>
+          <input type="text" name="city" id="city" placeholder="City">
+          <span id="cityWarning" class="alert"></span>
+        </p>
+
+        <p>
+          <label for="province">Province:</label>
+          <select name="province" id="province">
+            <option value="">Select Province</option>
+            <option value="AB">Alberta</option>
+            <option value="BC">British Columbia</option>
+            <option value="MB">Manitoba</option>
+            <option value="NB">New Brunswick</option>
+            <option value="NL">Newfoundland and Labrador</option>
+            <option value="NS">Nova Scotia</option>
+            <option value="ON">Ontario</option>
+            <option value="PE">Prince Edward Island</option>
+            <option value="QC">Quebec</option>
+            <option value="SK">Saskatchewan</option>
+            <option value="NT">Northwest Territories</option>
+            <option value="NU">Nunavut</option>
+            <option value="YT">Yukon</option>
+          </select>
+          <span id="provinceWarning" class="alert"></span>
+        </p>
+
+        <p>
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="">Select Country</option>
+            <option value="CA">Canada</option>
+            <option value="US">United States</option>
+            <option value="OTH">Other</option>
+          </select>
+          <span id="countryWarning" class="alert"></span>
+        </p>
+
+        <p>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="num" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          <span id="numWarning" class="alert"></span>
+
+          <select name="phoneType" id="phoneType">
+            <option value="home">Home</option>
+            <option value="mobile">Mobile</option>
+            <option value="business">Business</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="newsLetter">Sign up for our Newsletter </label>
+          <input type="checkbox" id="newsLetter" class="newsletter" checked>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment Information</legend>
+
+        <label for="payment">Payment Option:</label>
+        <input list="creditCard" id="payment" name="payment" placeholder="Double-Click Here">
+        <datalist id="creditCard">
+          <option value="Visa">
+            <option value="Mastercard">
+              <option value="Discovery">
+                <option value="American Express">
+                </datalist>
+                <span id="cardWarning" class="alert"></span>
+
+                <p>
+                  <input type="submit" id="submitBtn" value="Submit" name="submitBtn">
+                  <input type="reset" id="resetBtn" value="Reset" name="resetBtn">
+                </p>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="shop" id="shop" style="display:none">
+            <h1>
+              Shopping Cart
+            </h1>
+
+            <table>
+              <tr>
+                <th>Item</th>
+                <th>Value</th>
+                <th>Amount</th>
+                <th>Subtotal</th>
+              </tr>
+              <tr>
+                <td class="productCell" id="productCell">
+                  <img src="images/killerwhale.png" id="magnet" alt="killer whale" title="Killer Whale Magnet">
+                </td>
+                <td>$20.00</td>
+                <td id="items1"></td>
+                <td id="total1"></td>
+              </tr>
+              <tr>
+                <td class="productCell" id="productCell">
+                  <img src="images/seahorse.jpg" id="plush" alt="seahorse plushie" title="Seahorse Plushie">
+                </td>
+                <td>$35.00</td>
+                <td id="items2"></td>
+                <td id="total2"></td>
+              </tr>
+              <tr>
+                <td class="productCell" id="productCell">
+                  <img src="images/ornament.png" id="ornament" alt="polar bear tree ornament" title="Holiday Tree Ornament">
+                </td>
+                <td>$50.00</td>
+                <td id="items3"></td>
+                <td id="total3"></td>
+              </tr>
+            </table>
+
+            <p>
+              <table>
+                  <tr>
+                    <th>Your Order:</th>
+                    <th>Quantity</th>
+                    <th>Item Name</th>
+                  </tr>
+                  <tr>
+                    <td rowspan="3"></td>
+                    <td id="quantity1"></td>
+                    <td id="detail1"></td>
+                  </tr>
+                  <tr>
+                    <td id="quantity2"></td>
+                    <td id="detail2"></td>
+                  </tr>
+                  <tr>
+                    <td id="quantity3"></td>
+                    <td id="detail3"></td>
+                  </tr>
+              </table>
+            </p>
+
+            <p>
+              <table>
+                  <tr>
+                    <th>Your Total:</th>
+                    <td id="total"></td>
+                  </tr>
+              </table>
+            </p>
+
+            <p>
+              <input type="reset" value="Reset" name="resetBtn" id="reset">
+              <input type="submit" value="Submit" name="submitBtn">
+            </p>
+
+
+          </div>
+</body>
+</html>

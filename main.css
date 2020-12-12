@@ -1,0 +1,99 @@
+body{
+  background: var(--body);
+  color: var(--default) ;
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 12pt;
+  margin: 100px;
+  width: 80%;
+}
+
+:root {
+  /* BACKGROUND */
+  --body: #ECE9D4;
+  --table: #F5F5F5;
+  --button: #557379;
+
+  /* TEXT */
+  --default: #333333;
+  --heading: #bbdbd1;
+}
+
+h1 {
+  color: var(--heading);
+  font-family: 'Oswald', sans-serif;
+  font-size: 40pt;
+  text-transform: uppercase;
+  text-shadow: 2px 2px var(--default);
+}
+
+.about {
+  text-align: justify;
+}
+
+form {
+  background-color: var(--table);
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: var(--button);
+  border: none;
+  border-radius: 8px;
+  color: var(--table);
+  padding: 16px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.alert {
+  color: red;
+}
+
+table {
+  background-color: var(--table);
+  border: 0px solid var(--default);
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table, th, tr, td {
+  text-align: center;
+  text-transform: uppercase;
+  border: 0px solid var(--default);
+  padding: 10px;
+}
+
+th {
+  background-color: var(--button);
+  color: var(--table);
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 2px 2px var(--default);
+}
+
+td {
+  width: 250px;
+  font-size: 20px;
+}
+
+table img {
+  width: 200px;
+  height: 200px;
+}
+
+.productCell {
+  background-color: #FFFFFF;
+}
